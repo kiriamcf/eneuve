@@ -5,7 +5,7 @@ import '../styles/global.css';
 
 <Layout>
 	<main class="h-svh max-w-8xl w-full">
-		<img src="/background/1.jpg" alt="Background image" class="w-full h-full object-cover object-center max-w-none opacity-85" id="background" />
+		<img src="/eneuve/background/1.jpg" alt="Background image" class="w-full h-full object-cover object-center max-w-none opacity-85" id="background" />
 		<div class="absolute top-1/2 -translate-y-1/2 w-full z-10">
 			<h3 class="first-letter:uppercase text-center text-lg sm:text-xl md:text-2xl font-bold font-baskerville">presenting</h3>
 			<h1 class="uppercase text-[23vw] -mb-[8vw] -mt-[3vw] text-center font-acumin">eneuve</h1>
@@ -25,7 +25,7 @@ import '../styles/global.css';
 		let index = 1;
 		const updateBackground = () => {
 			index = (index % 11) + 1;
-			backgroundElement.src = `/background/${index}.jpg`;
+			backgroundElement.src = `/eneuve/background/${index}.jpg`;
 		};
 
 		setInterval(updateBackground, 3000);
