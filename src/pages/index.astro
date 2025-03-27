@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+---
+
+<Layout>
+	<main class="h-svh max-w-8xl w-full">
+		<img src="/background/1.jpg" alt="Background image" class="w-full h-full object-cover object-center max-w-none opacity-85" id="background" />
+		<div class="absolute top-1/2 -translate-y-1/2 w-full z-10">
+			<h3 class="first-letter:uppercase text-center text-lg sm:text-xl md:text-2xl font-bold font-baskerville">presenting</h3>
+			<h1 class="uppercase text-[23vw] -mb-[8vw] -mt-[3vw] text-center font-acumin">eneuve</h1>
+			<h3 class="text-center text-lg sm:text-xl md:text-2xl font-bold font-baskerville">by núria vilchez</h3>
+		</div>
+		<div class="absolute bottom-0 w-full text-black p-4 z-10">
+			<h5 class="text-center text-base sm:text-lg md:text-xl font-bold font-baskerville">comming soon</h5>
+			<h3 class="text-center text-lg sm:text-xl md:text-2xl font-bold font-baskerville">art direction, spatial design, photography & art</h3>
+		</div>
+	</main>
+</Layout>
+
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const backgroundElement = document.getElementById("background") as HTMLImageElement;
+
+		let index = 1;
+		const updateBackground = () => {
+			index = (index % 11) + 1;
+			backgroundElement.src = `/background/${index}.jpg`;
+		};
+
+		setInterval(updateBackground, 3000);
+	});
+</script>

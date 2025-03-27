@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'AcuminVariable';
+    src: url('fonts/AcuminVariableConcept.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal italic;
+}
+
+@font-face {
+    font-family: 'Baskerville';
+    src: url('fonts/baskerville.otf') format('otf');
+    font-weight: 100 900;
+    font-style: normal italic;
+}
+
+@theme {
+    --font-acumin: "AcuminVariable", "sans-serif"; 
+    --font-baskerville: "Baskerville", "serif";
+    --spacing-8xl: 1920px; 
+}
