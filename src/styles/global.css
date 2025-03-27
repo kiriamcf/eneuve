@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'AcuminVariable';
-    src: url('fonts/AcuminVariableConcept.woff2') format('woff2');
+    src: url('/eneuve/fonts/AcuminVariableConcept.woff2') format('woff2');
     font-weight: 100 900;
     font-style: normal italic;
 }
 
 @font-face {
     font-family: 'Baskerville';
-    src: url('fonts/baskerville.otf') format('otf');
+    src: url('/eneuve/fonts/baskerville.otf') format('otf');
     font-weight: 100 900;
     font-style: normal italic;
 }
