@@ -4,16 +4,16 @@ import '../styles/global.css';
 ---
 
 <Layout>
-	<main class="h-svh max-w-8xl w-full">
+	<main class="h-dvh max-w-8xl w-full mx-auto my-auto relative">
 		<img src="/eneuve/background/1.jpg" alt="Background image" class="w-full h-full object-cover object-center max-w-none opacity-85" id="background" />
 		<div class="absolute top-1/2 -translate-y-1/2 w-full z-10">
-			<h3 class="first-letter:uppercase text-center text-lg sm:text-xl md:text-2xl font-bold font-baskerville">presenting</h3>
-			<h1 class="uppercase text-[23vw] -mb-[8vw] -mt-[3vw] text-center font-acumin">eneuve</h1>
-			<h3 class="text-center text-lg sm:text-xl md:text-2xl font-bold font-baskerville">by núria vilchez</h3>
+			<h3 class="first-letter:uppercase text-center text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold font-baskerville">presenting</h3>
+			<h1 class="uppercase text-[23vw] 8xl:text-[400px] -mb-[5vw] 8xl:-mb-[75px] -mt-[5vw] 8xl:-mt-[75px] text-center font-helvetica">eneuve</h1>
+			<h3 class="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold font-baskerville">by núria vilchez</h3>
 		</div>
 		<div class="absolute bottom-0 w-full text-black p-4 z-10">
-			<h5 class="text-center text-base sm:text-lg md:text-xl font-bold font-baskerville">comming soon</h5>
-			<h3 class="text-center text-lg sm:text-xl md:text-2xl font-bold font-baskerville">art direction, spatial design, photography & art</h3>
+			<h5 class="text-center text-base sm:text-lg md:text-xl lg:text-2xl font-bold font-baskerville">comming soon</h5>
+			<h3 class="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold font-baskerville">art direction, spatial design, photography & art</h3>
 		</div>
 	</main>
 </Layout>
@@ -28,6 +28,6 @@ import '../styles/global.css';
 			backgroundElement.src = `/eneuve/background/${index}.jpg`;
 		};
 
-		setInterval(updateBackground, 3000);
+		setInterval(updateBackground, 1500);
 	});
 </script>

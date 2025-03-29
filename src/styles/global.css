@@ -8,6 +8,13 @@
 }
 
 @font-face {
+    font-family: 'Helvetica';
+    src: url('/eneuve/fonts/Helvetica.woff') format('woff');
+    font-weight: 100 900;
+    font-style: normal italic;
+}
+
+@font-face {
     font-family: 'Baskerville';
     src: url('/eneuve/fonts/baskerville.otf') format('otf');
     font-weight: 100 900;
@@ -17,5 +24,7 @@
 @theme {
     --font-acumin: "AcuminVariable", "sans-serif"; 
     --font-baskerville: "Baskerville", "serif";
+    --font-helvetica: "Helvetica", "serif";
     --spacing-8xl: 1920px; 
+    --breakpoint-8xl: 1920px;
 }
